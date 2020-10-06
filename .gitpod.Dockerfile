@@ -12,7 +12,7 @@ RUN sudo mkdir -p /data/db \
  
  
  # Install MySQL
- FROM gitpod/workspace-mysql
+ #FROM gitpod/workspace-mysql
 
 USER root
 
