@@ -52,7 +52,9 @@ public class MyServiceImpl implements MyService {
     @Override
     public String saveOrUpdate(String pid) {
         PatientId patientId = new PatientId(pid);
+        System.out.println("startservice");
         pidRepository.save(patientId);
+        System.out.println("endservice");
         return "idsaved";
     }
 

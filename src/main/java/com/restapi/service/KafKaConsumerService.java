@@ -25,5 +25,6 @@ public class KafKaConsumerService
       
         logger.info(String.format("Received Patient id is -> %s", message));
           System.out.println(myService.saveOrUpdate(message));
+          System.out.println("kafkaend");
     }
 }

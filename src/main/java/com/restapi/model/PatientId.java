@@ -1,5 +1,6 @@
 package com.restapi.model;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -15,8 +16,11 @@ import org.springframework.data.annotation.Id;
 @Table(name = "patientid")
 public class PatientId {
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @Column(name = "pid")
     private String pid;
+    //@GeneratedValue(strategy = GenerationType.AUTO)
+
+    @Column(name = "age")
     private int age = 10;
 
     public PatientId(String pid) {
